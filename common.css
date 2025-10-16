@@ -1,0 +1,564 @@
+/*    table, th, td {
+        border: 1px solid black;
+    }                         */
+/*            -webkit-scrollbar              {background-color:#0178af;}
+            -webkit-scrollbar-button       {background-color:#0178af;}
+            -webkit-scrollbar-track        {background-color:#0178af;}
+            -webkit-scrollbar-track-piece  {background-color:#0178af;}
+            -webkit-scrollbar-thumb        {background-color:#0178af;}
+            -webkit-scrollbar-corner       {background-color:#0178af;}
+            -webkit-resizer                {background-color:#0178af;}            */
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1080b4;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    height: 2px;
+    width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #1080b4;
+}
+
+.icon {
+    font-family: "symbology-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color:#0178af;	  
+    speak: none;
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+
+.icon:hover {
+    color: #5ea9cc !important;
+}
+
+.faIcon{
+    font-size:20px;
+    color:#0178af;                
+}
+
+.pgIcon{
+    color:#ffffff !important;
+    margin-right:2px;
+    font-size:16px;
+}
+
+.pgTitle{
+    color:#ffffff !important;
+    font-size:16px !important;                
+}
+
+.paneIcon{
+    color:#ffffff !important;
+    font-size:16px;
+}
+
+.noSpace{
+    margin:0px;
+    padding:0px;
+}
+
+.cntIcon{
+    font-family: "symbology-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color:#0178af;	  
+    speak: none;
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+}            
+
+.headIcon{
+    font-family: "symbology-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color:#0178af;	  
+    speak: none;
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+}            
+
+.cntFaIcon{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color:#0178af;
+}
+
+.blue{
+    color:#0178af !important;
+    font-weight:normal !important;
+    font-size:14px !important;
+    font-family: 'serif';
+}
+
+.blueMobile{
+    color:#0178af !important;
+    font-weight:normal !important;
+    font-size:11px !important;
+    font-family: 'serif';
+}
+
+.boldblue{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:14px !important;
+    font-family: 'serif';
+}              
+
+.boldblueMobile{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:11px !important;
+    font-family: 'serif';
+}              
+
+.boldred{
+    color:red !important;
+    font-weight:bold !important;
+    font-size:14px !important;
+    font-family: 'serif';
+}              
+
+.smallBlue{
+    color:#0178af !important;
+    font-weight:normal !important;
+    font-size:12px !important;
+    font-family: 'serif' !important;
+}
+
+.smallRed{
+    color:#ff0000 !important;
+    font-weight:normal !important;
+    font-size:12px !important;
+    font-family: 'serif' !important;
+}
+
+.boldSmallBlue{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    font-family: 'serif';
+}
+
+.boldSmallBlueMobile{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:9px !important;
+    font-family: 'serif';
+}
+
+.boldSmallGreen{
+    color:#04b008 !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    font-family: 'serif';
+}
+
+.boldSmallOrange{
+    color:#ffa500 !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    font-family: 'serif';
+}
+
+.boldSmallRed{
+    color:#ff0000 !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    font-family: 'serif';
+}
+
+.navBlue{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    font-family: 'serif';
+}       
+
+.inputBlue{
+    color:#0178af !important;
+    font-weight:normal !important;
+    font-size:12px !important;
+    font-family: 'serif' !important;
+}
+
+.linkBlue{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    font-family: 'serif' !important;
+}
+
+.linkColBlue{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    font-family: 'serif' !important;
+}
+
+.paneHeading{
+    color:#ffffff !important;
+    font-weight:bold !important;
+    font-size:14px;
+    font-family: 'serif';
+}
+
+.tbl_heading{
+    color:#ffffff !important;
+    font-weight:bold !important;
+    font-size:14px;
+    font-family: 'serif';            
+}
+
+.infoHeading{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:30px;
+    text-align:left;
+    vertical-align:top;
+    font-family: 'serif';
+}
+
+.infoName{
+    color:#0178af !important;
+    font-weight:bold !important;
+    font-size:14px;
+    text-align:left;
+    font-family: 'serif';
+}
+
+.infoDefinition{
+    color:#0178af !important;
+    font-weight:normal !important;
+    font-size:14px;
+    text-align: left;
+    font-family: 'serif';
+}            
+
+select {
+    color:#0178af !important;
+}
+
+td.centered{
+    text-align: center;
+}
+
+.center {
+    margin-top:5px !important;                
+    margin: auto;
+    text-align: center;
+    vertical-align:middle;
+    padding: 10px;
+    color:#0178af !important;                
+}
+
+.centerPane {
+    margin-top:5px !important;
+    margin: auto;
+    text-align: center;
+    color:#0178af !important;                
+}
+
+.centerLinks{
+    margin-top:5px !important;
+    margin-bottom:0px;
+    margin: auto;
+    text-align: center;
+    color:#0178af !important;
+    height:20px;
+    padding:0px;
+} 
+
+.centralPanel {
+    height:100%;
+    border:0;
+    border-color: transparent;
+    color:#ffffff !important;
+    font-size:12px !important;                 
+}            
+
+.left{
+    color:#0178af !important;
+    text-align: left !important;
+}
+
+.right{
+    color:#0178af !important;
+    text-align: right !important;
+    font-weight:normal !important;
+}
+
+table{
+    border-spacing: 0px;
+}
+
+td{
+    padding: 0px;
+}
+
+body {
+    font-family: serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0178af;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    background-color: blue !important;
+    font-weight: bold;
+}
+
+.mssg{
+    font-size: 12px;                
+}
+
+.nav{
+    font-size: 12px;
+}
+
+.txt{
+    font-size: 12px;
+}
+
+.col{
+    font-size: 10px;
+    color:#FFFFFF;
+}
+
+/*            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+                color: #ffffff;
+            }   */
+
+/*            .ui-panelgrid tr{
+                background: #c0deeb url("../images/symbology-nav-gradient.png") 0px 0px no-repeat;
+                background-image: linear-gradient(to right, #c0deeb, #ffffff);      
+            }*/
+
+.ui-outputlabel {
+    font-size:12px !important;
+}
+
+.ui-tooltip div {
+    background-color:#0178af !important;
+    color:#ffffff;
+}
+
+.ui-tooltip-arrow div{
+    background-color:#0178af !important;
+    color:#ffffff;
+}
+
+.ui-tooltip-text div{
+    background-color:#0178af !important;
+    color:#ffffff;
+}
+
+.ui-datatable-empty-message {
+    color:#0178af !important;
+}
+
+.ui-datatable thead th {
+    color: #ffffff !important;
+}
+
+.ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td {
+    padding: 1px 4px;
+}            
+
+.ui-panelgrid td {
+    border-width: 0px;
+    border-style: hidden;
+    border-color: inherit;
+    padding: 0px 0px;
+}
+
+.ui-datatable-data-empty .ui-dt-c {
+    width: 100% !important;
+}            
+
+.ui-panel {
+    padding: 0em;
+}
+.ui-widget-content {
+    color: #000;
+}
+.ui-panel .ui-panel-content {
+    border: 0;
+    background: none;
+    padding: 0em 0em;
+    color: #0178af;
+}
+.ui-button-text-only .ui-button-text {
+    padding: 0em;
+    color: #FFFFFF;
+}
+
+.ui-growl-item-container.ui-state-highlight {
+    border-color: pink;
+    background-color: #49A4CB;
+}
+
+.ui-inputfield {
+    height:12px;
+    font-size:10px !important;
+    color : #0178af !important;
+    font-family: 'serif' !important;                
+}            
+
+.ui-button{
+    font-size:12px !important;      
+    font-family: 'serif' !important;                
+}
+
+.ui-growl-item-container.ui-state-highlight {
+    border-color: black;
+    background-color: #49A4CB;
+}
+.ui-growl-item{
+    background-color: #49A4CB;                
+}
+.ui-growl-title {
+    font-size :20px;                  
+    color:#ffffff;
+}
+.ui-growl-message p {
+    font-size :12px;                  
+    color:#ffffff;
+}
+.ui-growl-icon-close{
+    background-color: #49A4CB;
+}
+.ui-growl-image{
+    background-color: #49A4CB;                                
+}
+
+.ui-layout-unit, ui-layout-unit, ui-layout-north, ui-layout-pane, ui-layout-pane-north {
+    border:none;padding:0;margin:0px;
+}
+
+.ui-layout-pane-north.ui-widget-content{
+    padding:0px;margin:0px;border-spacing:0px;
+}
+
+.ui-layout-pane-south.ui-widget-content{
+    padding:0px;margin:0px;border-spacing:0px;
+}
+
+.ui-layout-pane-east.ui-widget-content{
+    padding:0px;margin:0px;border-spacing:0px;
+}
+
+.ui-layout-pane-west.ui-widget-content{
+    padding:0px;margin:0px;border-spacing:0px;
+}
+
+.ui-layout-pane-center.ui-widget-content{
+    padding:0px;margin:0px;border-spacing:0px;
+}             
+
+.selectOperationOneMenu {
+    height:20px !important;
+    font-size: 10px !important;
+    color:#0178af !important;
+    font-family: 'serif' !important;                
+} 
+
+.ui-selectonemenu{
+    height:20px !important;
+    font-size: 10px !important;
+    color:#0178af !important;
+    font-family: 'serif' !important;                
+} 
+
+.ui-selectonemenu-trigger{
+    height:20px !important;
+    font-size: 10px !important;
+    color:#0178af !important;
+}
+
+.ui-selectonemenu-label {
+    height:12px !important;
+    font-size: 10px !important;
+    color:#0178af !important;
+    font-family: 'serif' !important;                
+}
+
+.ui-selectonemenu .ui-selectonemenu-label {
+    font-size: 10px !important;
+    color:#0178af !important;
+    font-family: 'serif' !important;                
+}
+
+.ui-selectonemenu-item {
+    font-size: 10px !important;
+    color:#0178af !important;
+    font-family: 'serif' !important;
+}
+
+.createOcurrence{
+    color:green !important;
+}
+.updateOcurrence{
+    color:orange !important;
+}
+.expectOcurrence{
+    color:red !important;
+}
+
+.ui-layout-north {
+    overflow:hidden !important;
+}
+
+.ui-layout-north{
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}    
+
+.northStyle {
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */                
+}
